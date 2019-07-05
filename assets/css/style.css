@@ -1,0 +1,130 @@
+/* HEADER */
+.navbar-fixed {
+    position: fixed;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar {
+    display: flex;
+    justify-content: end;
+}
+
+#navbar a.nav-link{
+    color: #fff;
+}
+
+/* DESIGN GENERAL */
+#presentation,
+#experiences,
+#competences,
+#contact {
+    padding: 2rem;
+}
+
+h1 {
+    padding: 2rem;
+    text-align: center;
+}
+
+.row>.card {
+    border: none;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* PRESENTATION */
+#resume {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/143/1920/1080');
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* EXPERIENCES */
+#experiences {
+    background-color: #f5f5f5;
+}
+
+#experiences .experiences-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 0;
+}
+
+#experiences .experiences-image {
+    max-width: 100%;
+    width: 50%;
+    object-fit: contain;
+    padding: 0 1rem;
+}
+
+#experiences .experiences-infos {
+    width: 50%;
+    padding: 0 1rem;
+}
+
+#experiences ul.experiences-tags {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#experiences ul.experiences-tags>li{
+    margin-right: .5rem;
+}
+
+#experiences ul.experiences-tags>li>span{
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+#experiences .separator {
+    width: 50%;
+    border: 1px solid #ccc;
+    margin: 4rem auto;
+}
+
+/* COMPETENCES */
+#competences .row>.card {
+    width: calc(100% / 5 - 3rem);
+    /* height: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#competences .row>.card img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* CONTACT */
+#contact .row>.card a {
+    display: contents;
+}
+
+#contact .row>.card img {
+    width: 50px;
+    height: 50px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #eee;
+    padding: 4rem 0 .5rem;
+    text-align: center;
+}
