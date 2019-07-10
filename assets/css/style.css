@@ -4,8 +4,12 @@
     right: 0;
     left: 0;
     background-color: rgba(0,0,0,0.5);
-    z-index: 1;
+    z-index: 3;
     padding: 1rem;
+}
+
+#navbarNav {
+    justify-content: center;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -36,14 +40,32 @@ ul {
 
 /* PRESENTATION */
 #resume {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/143/1920/1080');
-    background-size: cover;
-    min-height: 100vh;
-    color: #fff;
+    background-color: #000;
+    padding-bottom: .5rem;
+}
+
+.resume-background {
+/* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/143/1920/1080'); */
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/bg-resume.png');
+filter: blur(2.5px);
+background-size: cover;
+min-height: calc(100vh - .5rem);
+}
+
+.resume-info {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 /* EXPERIENCES */

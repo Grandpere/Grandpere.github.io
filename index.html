@@ -13,15 +13,6 @@
 
 <body>
     <header class="navbar-fixed">
-        <!-- <nav>
-            <ul id="navbar" class="nav">
-                <li class="nav-item"><a class="nav-link" href="#resume">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="#presentation">Présentation</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experiences">Expériences</a></li>
-                <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </nav> -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,9 +42,12 @@
 
     <main>
         <section id="resume">
-            <h1>Lorenzo Marozzo</h1>
-            <h2>Développeur Web spécialisé Symfony</h2>
-            <h3>Coulommiers (77) - Ile de France</h3>
+            <div class="resume-background"></div>
+            <div class="resume-info">
+                <h1>Lorenzo Marozzo</h1>
+                <h2>Développeur Web spécialisé Symfony</h2>
+                <h3>Coulommiers (77) - Ile de France</h3>
+            </div>
         </section>
         <div class="container">
             <section id="presentation">
@@ -90,6 +84,7 @@
                             <li><span class="badge badge-secondary">Symfony4</span></li>
                             <li><span class="badge badge-secondary">Doctrine</span></li>
                             <li><span class="badge badge-secondary">MySQL</span></li>
+                            <li><span class="badge badge-secondary">PHP</span></li>
                             <li><span class="badge badge-secondary">JWT</span></li>
                             <li><span class="badge badge-secondary">API REST</span></li>
                         </ul>
@@ -119,18 +114,22 @@
             <article>
                 <div class="row">
                     <div class="experiences-infos col-12 col-lg-6">
-                        <h2>Lorem, ipsum dolor.</h2>
+                        <h2>FAQ O'Clock</h2>
+                        <ul class="experiences-tags">
+                                <li><span class="badge badge-secondary">Symfony4</span></li>
+                                <li><span class="badge badge-secondary">Doctrine</span></li>
+                                <li><span class="badge badge-secondary">MySQL</span></li>
+                                <li><span class="badge badge-secondary">PHP</span></li>
+                            </ul>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nobis eveniet consequatur neque
-                            culpa! Mollitia magnam aliquid dolorum deleniti. Libero totam earum suscipit quisquam
-                            exercitationem ea natus sapiente minima accusantium neque inventore, expedita quaerat est
-                            illo
-                            commodi eaque sed facere?
+                            Ce mini projet était a réaliser le soir après nos cours portant sur la spécialité Symfony, et dans un délai d'une semaine.
+                            Il s'agissait de proposer un site du style Stackoverflow ou Quorra permettant de poser des questions, d'obtenir des réponses et bien sur de classer toutes les questions selon des thèmes.
+                            Il s'agissait d'un projet à réaliser seul donc j'ai réalisé la totalité du site comprenant la partie front et back-office. 
                         </p>
-                        <a class="btn btn-sm btn-outline-primary disabled" role="button" aria-disabled="true" href="" target="_blank" data-toggle="tooltip"
-                            title="Voir le site">Voir le site</a>
+                        <a class="btn btn-sm btn-outline-primary" role="button" aria-disabled="true" href="https://github.com/Grandpere/symfo-eval-faq" target="_blank" data-toggle="tooltip"
+                            title="Voir le dépot sur Github dans une nouvelle fenêtre du navigateur">Voir le dépot</a>
                     </div>
-                    <img class="experiences-image d-none d-lg-block col-lg-6" src="https://picsum.photos/500/300"
+                    <img class="experiences-image d-none d-lg-block col-lg-6" src="assets/images/eval-symfo.png"
                         alt="illustration du site">
                 </div>
             </article>
