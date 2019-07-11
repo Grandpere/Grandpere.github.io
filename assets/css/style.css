@@ -42,6 +42,30 @@ ul {
 #resume {
     background-color: #000;
     padding-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 100vh;
+}
+
+#white-arrow {
+    cursor: pointer;
+    position: relative;
+    top: -3.5rem;
+    animation: bounceArrow 0.5s infinite alternate;
+}
+
+#white-arrow a {
+    font-size: 2rem;
+}
+
+@keyframes bounceArrow {
+    from {
+        margin-top: 20px;
+    }
+    to {
+        margin-top: 0px;
+    }
 }
 
 .resume-background {
@@ -49,6 +73,7 @@ ul {
 background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/bg-resume.png');
 filter: blur(2.5px);
 background-size: cover;
+background-attachment: fixed;
 min-height: calc(100vh - .5rem);
 }
 
