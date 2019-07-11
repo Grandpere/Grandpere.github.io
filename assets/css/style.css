@@ -96,7 +96,7 @@ min-height: calc(100vh - .5rem);
 }
 
 #experiences .separator {
-    width: 50%;
+    width: 25%;
     border: 1px solid #ccc;
     margin: 4rem auto;
 }
