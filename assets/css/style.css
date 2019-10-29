@@ -69,7 +69,6 @@ ul {
 }
 
 .resume-background {
-/* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/id/143/1920/1080'); */
 background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/bg-resume.png');
 filter: blur(2.5px);
 background-size: cover;
@@ -96,6 +95,25 @@ min-height: calc(100vh - .5rem);
 /* EXPERIENCES */
 #experiences {
     background-color: #f5f5f5;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-img-overlay {
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#experiences #carouselExampleIndicators .carousel-item img {
+    max-width: 100%;
+    max-height: 25rem;
 }
 
 #experiences .experiences-image {
