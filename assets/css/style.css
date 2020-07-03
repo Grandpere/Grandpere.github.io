@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER */
 .navbar-fixed {
     position: fixed;
@@ -33,9 +37,13 @@ h5 {
     text-align: center;
 }
 
-.row>.card {
+.card {
     border: none;
-    margin: .5rem;
+    /*margin: .5rem;*/
+}
+
+.card > .card-body {
+    padding: .5rem;
 }
 
 ul {
@@ -94,6 +102,26 @@ min-height: calc(100vh - .5rem);
     width: 80%;
     padding: 20px;
     text-align: center;
+}
+
+.resume-info .animated:first-child {
+    animation-delay: .3s;
+    animation-duration: 1.5s;
+}
+
+.resume-info .animated:nth-child(2) {
+    animation-delay: .6s;
+    animation-duration: 1.5s;
+}
+
+.resume-info .animated:last-child {
+    animation-delay: .9s;
+    animation-duration: 1.5s;
+}
+
+#presentation {
+    animation-delay: .5s;
+    animation-duration: 1s;
 }
 
 /* EXPERIENCES */
@@ -166,6 +194,79 @@ min-height: calc(100vh - .5rem);
 }
 
 /* CONTACT */
+#contact {
+    background-color: #f5f5f5;
+    margin-bottom: 4rem;
+}
+
+#contact-me-error {
+    width: 50%;
+    text-align: center;
+    margin: .5rem auto;
+    padding: .5rem;
+    color: #F46036;
+}
+
+#contact-me-error.show {
+    opacity: 1;
+    transition: opacity .5s;
+    display: block;
+}
+
+#contact-me-error.hide {
+    opacity: 0;
+    transition: opacity .5s;
+    display: none;
+}
+
+.click-animations input {
+    display: block;
+    margin: .5rem auto;
+    padding: .5rem;
+    height: 2.5rem;
+    width: 50%;
+    outline: none;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.click-animations textarea {
+    display: block;
+    margin: .5rem auto;
+    padding: .5rem;
+    width: 50%;
+    outline: none;
+    border: 2px solid transparent;
+    resize: none;
+    transition: 0.3s;
+}
+
+.click-animations input:focus,
+.click-animations textarea:focus {
+    border-color: #30cc8b;
+}
+
+.click-animations button {
+    display: block;
+    margin: .5rem auto;
+    padding: .5rem;
+    width: 50%;
+    border: none;
+    outline: none;
+    background: #30cc8b;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.click-animations button:active {
+    transform: scale(0.95);
+}
+
+.form-error {
+    border-color: #F46036 !important;
+}
+
 #contact .row > a {
     display: inline-block;
     color: #000;
