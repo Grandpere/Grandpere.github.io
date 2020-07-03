@@ -24,7 +24,11 @@
     padding: 2rem;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     padding: 0 0 2rem;
     text-align: center;
 }
@@ -148,21 +152,24 @@ min-height: calc(100vh - .5rem);
 #competences .row>.card {
     align-items: center;
     justify-content: center;
+    max-width: 100px;
 }
 
 #competences .row>.card img {
     max-width: 100%;
     object-fit: cover;
+    filter: brightness(0%);
+}
+
+#competences .row>.card img.colored {
+    filter: brightness(100%);
 }
 
 /* CONTACT */
-#contact .row>.card a {
-    display: contents;
-}
-
-#contact .row>.card img {
-    width: 50px;
-    height: 50px;
+#contact .row > a {
+    display: inline-block;
+    color: #000;
+    margin: 0 .5rem;
 }
 
 /* FOOTER */
