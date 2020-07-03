@@ -47,6 +47,8 @@ The objective of this project was to develop a simple porfolio.
 
 * HTML5
 * CSS3
+* Bootstrap
+* JS
 
 
 <!-- GETTING STARTED -->
