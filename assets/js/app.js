@@ -38,7 +38,7 @@ let app = {
             form.reset();
             //button.style = "display: none;";
             status.innerHTML = "Thanks!";
-            changeStyle();
+            statusClass();
             status.style.color = "#30cc8b";
         }
 
