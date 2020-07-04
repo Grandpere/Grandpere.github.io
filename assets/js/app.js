@@ -36,7 +36,6 @@ let app = {
 
         function success() {
             form.reset();
-            //button.style = "display: none;";
             status.innerHTML = "Thanks!";
             statusClass();
             status.style.color = "#30cc8b";
@@ -48,7 +47,7 @@ let app = {
             status.style.color = "#F46036";
         }
 
-        function  statusClass() {
+        function statusClass() {
             status.classList.remove("hide");
             status.classList.add("show");
         }
