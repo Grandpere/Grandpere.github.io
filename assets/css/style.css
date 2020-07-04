@@ -199,21 +199,21 @@ min-height: calc(100vh - .5rem);
     margin-bottom: 4rem;
 }
 
-#contact-me-error {
+#formspree_status {
     width: 50%;
     text-align: center;
     margin: .5rem auto;
     padding: .5rem;
-    color: #F46036;
+    color: #000;
 }
 
-#contact-me-error.show {
+.show {
     opacity: 1;
     transition: opacity .5s;
     display: block;
 }
 
-#contact-me-error.hide {
+.hide {
     opacity: 0;
     transition: opacity .5s;
     display: none;
@@ -265,12 +265,6 @@ min-height: calc(100vh - .5rem);
 
 .form-error {
     border-color: #F46036 !important;
-}
-
-#contact .row > a {
-    display: inline-block;
-    color: #000;
-    margin: 0 .5rem;
 }
 
 /* FOOTER */

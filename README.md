@@ -49,6 +49,7 @@ The objective of this project was to develop a simple porfolio.
 * CSS3
 * Bootstrap
 * JS
+* Formspree
 
 
 <!-- GETTING STARTED -->

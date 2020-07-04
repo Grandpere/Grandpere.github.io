@@ -524,24 +524,14 @@
             <section id="contact">
                 <div class="click-animations">
                     <h2>Me contacter</h2>
-                    <p id="contact-me-error" class="hide"></p>
-                    <form>
-                        <input type="text" placeholder="Name" id="contact-me-name" />
-                        <input type="text" placeholder="Email" id="contact-me-email" />
-                        <textarea rows="7" placeholder="Message" id="contact-me-message"></textarea>
+                    <p id="formspree_status" class="hide"></p>
+                    <form action="https://formspree.io/mgennapp" method="POST" id="formspree_contact">
+                        <input type="text" name="_name" placeholder="Name" id="formspree_name">
+                        <input type="email" name="_replyto" placeholder="Email" id="formspree_email">
+                        <textarea rows="7" name="_message" placeholder="Message" id="formspree_message"></textarea>
+
+                        <button name="_button" id="formspree_submit">Send</button>
                     </form>
-                    <button id="contact-me-button">Send</button>
-                </div>
-                <div class="row justify-content-center">
-                    <a href="https://www.linkedin.com/in/lorenzomarozzo/">
-                        <i class="fab fa-linkedin fa-3x"></i>
-                    </a>
-                    <a href="mailto:lorenzo.marozzo@gmail.com&subject=contact via le portfolio">
-                        <i class="far fa-envelope fa-3x"></i>
-                    </a>
-                    <a href="tel:+33698326414">
-                        <i class="fas fa-phone fa-3x"></i>
-                    </a>
                 </div>
             </section>
         </div>
@@ -560,8 +550,6 @@
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    <script src="https://smtpjs.com/v3/smtp.js">
     </script>
     <script src="assets/js/app.js"></script>
 </body>
