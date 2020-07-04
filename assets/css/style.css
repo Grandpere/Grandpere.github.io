@@ -263,11 +263,6 @@ min-height: calc(100vh - .5rem);
     transform: scale(0.95);
 }
 
-.gcpt {
-    display: flex;
-    justify-content: center;
-}
-
 .form-error {
     border-color: #F46036 !important;
 }
