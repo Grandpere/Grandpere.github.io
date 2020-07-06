@@ -49,6 +49,7 @@ The objective of this project was to develop a simple porfolio.
 * CSS3
 * Bootstrap
 * JS
+* jQuery
 * Formspree
 
 
@@ -85,5 +86,9 @@ See the [open issues](https://github.com/Grandpere/grandpere.github.io/issues) f
 
 
 <!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* Thanks to for inspiring : 
+    1. [Paul Barker Timeline](https://codepen.io/paulhbarker/pen/apvGdv/) : I have make many adaptation and use element creation with javascript.
+    2. [Arnaud Balland Simple Overlay](https://codepen.io/ArnaudBalland/pen/vGZKLr) : I have make little adaptation.
 
 <!-- OTHERS -->
