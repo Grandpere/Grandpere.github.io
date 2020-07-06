@@ -119,76 +119,20 @@ ul {
     animation-duration: 1.5s;
 }
 
-#presentation {
-    animation-delay: .5s;
-    animation-duration: 1s;
+#presentation_description {
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+}
+
+#presentation_cv {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 220px;
 }
 
 /* EXPERIENCES */
-/*
-#experiences {
-    background-color: #f5f5f5;
-}
-
-.carousel-item {
-    position: relative;
-}
-
-.carousel-img-overlay {
-    background-color: rgba(0,0,0,.5);
-    height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-#experiences #carouselExampleIndicators .carousel-item img {
-    max-width: 100%;
-    max-height: 25rem;
-}
-
-#experiences .experiences-image {
-    object-position: top;
-    height: 100%;
-}
-
-#experiences ul.experiences-tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-}
-
-#experiences ul.experiences-tags>li{
-    margin-right: .5rem;
-}
-
-#experiences ul.experiences-tags>li>span{
-    padding: .5rem;
-    margin-bottom: .5rem;
-}
-
-#experiences .separator {
-    width: 25%;
-    border: 1px solid #ccc;
-    margin: 4rem auto;
-    animation: open 1s ease-in-out;
-}
-
-@keyframes open {
-    0% {
-        width: 0;
-    }
-    50% {
-        width: 50%;
-    }
-    100% {
-        width: 25%;
-    }
-}
-*/
+/* moved in timeline.css */
 
 /* COMPETENCES */
 #competences .row>.card {
@@ -233,12 +177,39 @@ ul {
     display: none;
 }
 
+@media (max-width: 999px) {
+    .click-animations input {
+        width: 100%;
+    }
+
+    .click-animations textarea {
+        width: 100%;
+    }
+
+    .click-animations button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .click-animations input {
+        width: 50%;
+    }
+
+    .click-animations textarea {
+        width: 50%;
+    }
+
+    .click-animations button {
+        width: 50%;
+    }
+}
+
 .click-animations input {
     display: block;
     margin: .5rem auto;
     padding: .5rem;
     height: 2.5rem;
-    width: 50%;
     outline: none;
     border: 2px solid transparent;
     transition: 0.3s;
@@ -248,7 +219,6 @@ ul {
     display: block;
     margin: .5rem auto;
     padding: .5rem;
-    width: 50%;
     outline: none;
     border: 2px solid transparent;
     resize: none;
@@ -264,7 +234,6 @@ ul {
     display: block;
     margin: .5rem auto;
     padding: .5rem;
-    width: 50%;
     border: none;
     outline: none;
     background: #30cc8b;
@@ -286,4 +255,8 @@ footer {
     background-color: #eee;
     padding: 4rem 0 .5rem;
     text-align: center;
+}
+
+span.heart {
+    color: red;
 }

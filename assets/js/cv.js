@@ -14,10 +14,23 @@ let cv = {
         });
     },
     createCvFromJson: function (data) {
+        // resume
         let resume = data.resume;
+
+        $('#resume_resume-info_h1').text(data.resume.fullname);
+        $('#resume_resume-info_h2').text(data.resume.job);
+        $('#resume_resume-info_h3').text(data.resume.localisation);
+
+        // presentation
         let presentation = data.presentation;
+
+        $('#presentation_description').html(data.presentation.description);
+        let buttonCv = $('#presentation_cv');
+        buttonCv.attr('href', data.presentation.link);
+        buttonCv.attr('title', data.presentation.alt);
+
+        // experiences
         let experiences = data.experiences;
-        let competences = data.competences;
 
         let $timelineWrapper = $('#demo-card-wrapper');
 
@@ -43,6 +56,10 @@ let cv = {
             wrapperHeight = 0 === countCard %2 ? Math.ceil(countCard / 2) * (matches + 90) + 135 : Math.ceil(countCard / 2) * (matches + 90);
         }
         $timelineWrapper.css('height', wrapperHeight);
+
+        // competences
+        let competences = data.competences;
+        // TODO : finish this
     },
     createExperienceHtmlElement: function (experience) {
         let $experience = $('#empty_demo-card').contents().clone();

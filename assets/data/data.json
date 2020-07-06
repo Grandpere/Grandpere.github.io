@@ -345,7 +345,7 @@
     },
     {
       "title": "Docker Compose",
-      "html": "<img src=\"assets/images/skills/dcompose.svg\" class=\"card-img-top\" alt=\"Logo de l'outil Docker Compose\">"
+      "html": "<img src=\"assets/images/skills/docker-compose.svg\" class=\"card-img-top\" alt=\"Logo de l'outil Docker Compose\">"
     },
     {
       "title": "Composer",
