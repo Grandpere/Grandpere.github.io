@@ -159,5 +159,3 @@ let cv = {
         $('.carousel-inner').html('');
     }
 };
-
-document.addEventListener('DOMContentLoaded', cv.init);

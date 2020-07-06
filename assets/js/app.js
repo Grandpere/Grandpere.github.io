@@ -2,6 +2,7 @@ let app = {
     init: function () {
         app.currentYear();
         app.contact();
+        cv.init();
     },
     currentYear: function () {
         document.getElementById("year").innerHTML = new Date().getFullYear().toString();
