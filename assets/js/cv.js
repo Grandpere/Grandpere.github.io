@@ -72,7 +72,7 @@ let cv = {
         $experience.find('.head > h2 > .small').text(experience.period);
 
         let resume = experience.description.slice(0,experience.description.indexOf('.'));
-        $experience.find('.body > p').text(resume.concat('...'));
+        $experience.find('.body > p').html(resume.concat('...'));
 
         let cover = $experience.find('.content > img.content-image');
         cover.attr('src', experience.cover);
@@ -137,15 +137,20 @@ let cv = {
         $('div.carousel-inner > div').first().addClass('active');
 
         // project description
-        $('#modalProject').find('.modal-body').text(dataExperience.description);
+        $('#modalProject').find('.modal-body').html(dataExperience.description);
         // project links
+        let $modalFooter = $('.modal-footer');
+        if(0 === dataExperience.links.length) {
+            let $htmlP = $('<p></p>');
+            $htmlP.text('Pas de lien disponible pour ce projet');
+            $modalFooter.append($htmlP);
+        }
         $.each(dataExperience.links, function (linkIndex, currentLink) {
             let $htmlLink = $('<a></a>');
             $htmlLink.attr('href', currentLink.url);
             $htmlLink.attr('title', currentLink.title);
             $htmlLink.text(currentLink.value);
 
-            let $modalFooter = $('.modal-footer');
             $modalFooter.append($htmlLink);
         });
         // show modal

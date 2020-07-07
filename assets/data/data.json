@@ -17,10 +17,10 @@
       "type": "perso",
       "title": "Fallout76 marketplace",
       "cover": "assets/images/default-cover.png",
-      "description": "Ce projet avait pour but de développer un outils permettant de créer des annonces afin de les proposer des objets du jeu à la vente/échange/troc avec d'autres joueurs",
+      "description": "<p>Ce projet avait pour but de développer un outils permettant de créer des annonces afin de les proposer des objets du jeu à la vente/échange/troc avec d'autres joueurs.</p>",
       "links": [
         {
-          "value": "Voir le dépôt",
+          "value": "Voir le dépôt Github",
           "url": "https://github.com/Grandpere/f76-market",
           "title": "Accéder au dépôt sur Github dans une nouvelle fenêtre du navigateur"
         }
@@ -40,10 +40,10 @@
       "type": "perso",
       "title": "Portfolio v2",
       "cover": "assets/images/projects/portfolio/portfolio.png",
-      "description": "Ce projet avait pour but de développer un portfolio simple qui serait hébergé sur Github Page donc sans possibilité d'avoir d'interaction avec un serveur ou une base de données. La v1 était du HTML et CSS statique or c'était contraignant de devoir modifier à la main à chaque fois. La v2 utilise un fichier json contenant les données qui sera lu par le js et qui génerera mon contenu. Je n'aurai plus qu'à ajouter des données au json en respectant le format que j'ai choisi.",
+      "description": "<p>Ce projet avait pour but de développer un portfolio simple qui serait hébergé sur Github Page donc sans possibilité d'avoir d'interaction avec un serveur ou une base de données.</p><p>La v1 était du HTML et CSS statique or c'était contraignant de devoir modifier à la main à chaque fois.</p><p>La v2 utilise un fichier json contenant les données qui sera lu par le js et qui génerera mon contenu. Je n'aurai plus qu'à ajouter des données au json en respectant le format que j'ai choisi.</p>",
       "links": [
         {
-          "value": "Voir le dépôt",
+          "value": "Voir le dépôt Github",
           "url": "https://github.com/Grandpere/grandpere.github.io",
           "title": "Accéder au dépôt sur Github dans une nouvelle fenêtre du navigateur"
         },
@@ -68,10 +68,10 @@
       "type": "perso",
       "title": "Blog communautaire",
       "cover": "assets/images/default-cover.png",
-      "description": "Ce projet personnel a été réalisé seul pas vraiment en condition réelle puisque j'étais confiné avec mon enfant que je ne pouvais laisser seul. Le but était de réaliser un \"blog communautaire\" du style medium/dev.to afin de mettre en pratique mes compétences sur Symfony et d'en apprendre d'autre. J'étais initialement parti pour développer une API pouvant servir sur d'autres supports mais, bien que cette idée soit la meilleure pour le futur de l'application, n'était pas le plus pertinent pour fournir le MVP que je souhaitais. J'ai donc repris le développement d'une application classique sans API. J'ai dans un premier temps conçu un MCD et quelques users stories afin de documenter les fonctionnalités et la conception de l'application. J'ai implémenté :<br />- l'upload de fichier via VichUploaderBundle que j'ai experimenté par la même occasion<br />- la récupération très basique d'un avatar via Gravatar<br />- le parcours complet d'un utilisateur (inscription, connexion, activation de compte, mot de passe oublié, etc...)<br />- les fixtures via un bundle que je n'avais pas encore testé jusqu’à présent.<br />- la fonctionnalité impersonate User utilisé dans des backend comme Sonata pour visualiser directement une application selon le profil de l'utilisateur.<br />- un voter et j'ai approfondi mes connaissances sur les voters de Symfony<br />- des requêtes personnalisées dans mes repository.<br />- un dataTransformer<br />- autocomplétion ajax des catégories d'articles.<br />- un formulaire de contact<br />- des tests unitaires et fonctionnels basiques via PHPUnit (non fini). J'ai aussi testé des outils d'intégration continue comme TravisCi / CircleCi, comment réduire le temps de réponse de mes pages par plusieurs moyens (optimisation des requêtes, compilation des assets via webpackencore, mise en cache). Le projet n'est pas terminé, j'avance en fonction de ma recherche d'emploi, événement emploi, etc...",
+      "description": "<p>Ce projet a été réalisé seul pas vraiment en condition réelle puisque j'étais confiné avec mon enfant que je ne pouvais laisser seul. Le but était de réaliser un \"blog communautaire\" du style medium/dev.to afin de mettre en pratique mes compétences sur Symfony et d'en apprendre d'autre.</p><p>J'étais initialement parti pour développer une API pouvant servir sur d'autres supports mais, bien que cette idée soit la meilleure pour le futur de l'application, n'était pas le plus pertinent pour fournir le MVP que je souhaitais.</p><p>J'ai donc repris le développement d'une application classique sans API. J'ai dans un premier temps conçu un MCD et quelques users stories afin de documenter les fonctionnalités et la conception de l'application.</p><p>J'ai implémenté :<br />- l'upload de fichier via VichUploaderBundle que j'ai experimenté par la même occasion<br />- la récupération très basique d'un avatar via Gravatar<br />- le parcours complet d'un utilisateur (inscription, connexion, activation de compte, mot de passe oublié, etc...)<br />- les fixtures via un bundle que je n'avais pas encore testé jusqu’à présent.<br />- la fonctionnalité impersonate User utilisé dans des backend comme Sonata pour visualiser directement une application selon le profil de l'utilisateur.<br />- un voter et j'ai approfondi mes connaissances sur les voters de Symfony<br />- des requêtes personnalisées dans mes repository.<br />- un dataTransformer<br />- autocomplétion ajax des catégories d'articles.<br />- un formulaire de contact<br />- des tests unitaires et fonctionnels basiques via PHPUnit (non fini).</p><p>J'ai aussi testé des outils d'intégration continue comme TravisCi / CircleCi, comment réduire le temps de réponse de mes pages par plusieurs moyens (optimisation des requêtes, compilation des assets via webpackencore, mise en cache).</p><p>Le projet n'est pas terminé, j'avance en fonction de ma recherche d'emploi, événement emploi, etc...</p>",
       "links": [
         {
-          "value": "Voir le dépôt",
+          "value": "Voir le dépôt Github",
           "url": "https://github.com/Grandpere/blog",
           "title": "Accéder au dépôt sur Github dans une nouvelle fenêtre du navigateur"
         }
@@ -91,7 +91,7 @@
       "type": "stage",
       "title": "Tribz",
       "cover": "assets/images/projects/tribz/11_global_metrics.png",
-      "description": "Ce stage visait à faire évoluer une application Symfony 2 vers Symfony 4 et d'y intégrer une page de statistiques des utilisateurs ayant connecté leurs réseaux sociaux à la plateforme.",
+      "description": "<p>Ce stage visait à faire évoluer une application Symfony 2 vers Symfony 4 et d'y intégrer une page de statistiques des utilisateurs ayant connecté leurs réseaux sociaux à la plateforme.</p>",
       "links": [],
       "media": [
         {
@@ -143,7 +143,7 @@
       "type": "stage",
       "title": "Instagram Screenshots Service",
       "cover": "assets/images/projects/ssaas/ssaas.jpg",
-      "description": "L'objectif de ce service était de réaliser un service pouvant remplacer un script utilisant phantomjs lancé via la console. Le but était d'avoir un formulaire web ou l'on pouvait saisir une liste d'url pour obtenir les screenshots. A la différence des autres services, celui ci ne cible pas la page entière mais uniquement le contenu du post Instagram et permet de conserver la légende du post qui n'est pas affiché par Instagram qui se concentre sur les derniers commentaires.",
+      "description": "<p>L'objectif de ce service était de réaliser un service pouvant remplacer un script utilisant phantomjs lancé via la console.</p><p>Le but était d'avoir un formulaire web ou l'on pouvait saisir une liste d'url pour obtenir les screenshots. A la différence des autres services, celui ci ne cible pas la page entière mais uniquement le contenu du post Instagram et permet de conserver la légende du post qui n'est pas affiché par Instagram qui se concentre sur les derniers commentaires.</p>",
       "links": [],
       "media": [
         {
@@ -160,17 +160,22 @@
       "type": "formation",
       "title": "O'Children",
       "cover": "assets/images/projects/ochildren/ochildren.png",
-      "description": "Ce projet de fin de formation a été réalisé en équipe. Le but était de mener un mini projet de 1 mois à terme en mode agile.\n\nL'équipe était composé de 3 développeurs React et d'un développeur PHP Symfony donc j'ai développé seul pendant les sprints de développement.\n\nCe projet a été découpé en 4 sprints d'une semaine :\n- Sprint de documentation, de réalisation du cahier des charges, des documents de conceptions (MCD, MLD, wireframes, users stories, workflow git, etc...)\n- Sprint de développement du MVP (Minimum Viable Product) afin de coder les principales fonctionnalités prévues et validées dans le cahier des charges\n- Sprint 2 de développement pour finaliser nos fonctionnalités.\n- Sprint de débug et mise en ligne afin de corriger et finaliser notre MVP, aucune features ne devaient être codé pendant ce sprint.\n\nLa partie API et le backend ont été développé en PHP via le framework Symfony (version 4). L'API a été développé sans l'utilisation de bundle comme API Platform ou FOSRestBundle.\nL'API a été documenté grâce au bundle NelmioAPIDocBundle\nLa partie front non présente dans ce dépôt a été développé en Javascript avec React.\nLa communication entre les deux a été faite via des requêtes Axios et JWT a été utilisé pour protéger certaines ressources de l'API.\n\nL'équipe n'a pas poursuivi le développement du projet donc il est resté au stade v1.\n\nPrésentation du projet sur Youtube : https://youtu.be/i4v-851tBPo?t=596\n(Fin de notre projet à 30 min)",
+      "description": "<p>Ce projet de fin de formation a été réalisé en équipe. Le but était de mener un mini projet de 1 mois à terme en mode agile.</p><p>L'équipe était composé de 3 développeurs React et d'un développeur PHP Symfony donc j'ai développé seul pendant les sprints de développement.</p><p>Ce projet a été découpé en 4 sprints d'une semaine :<br />- Sprint de documentation, de réalisation du cahier des charges, des documents de conceptions (MCD, MLD, wireframes, users stories, workflow git, etc...)<br />- Sprint de développement du MVP (Minimum Viable Product) afin de coder les principales fonctionnalités prévues et validées dans le cahier des charges<br />- Sprint 2 de développement pour finaliser nos fonctionnalités.<br />- Sprint de débug et mise en ligne afin de corriger et finaliser notre MVP, aucune features ne devaient être codé pendant ce sprint.</p><p>La partie API et le backend ont été développé en PHP via le framework Symfony (version 4). L'API a été développé sans l'utilisation de bundle comme API Platform ou FOSRestBundle.</p><p>L'API a été documenté grâce au bundle NelmioAPIDocBundle. La partie front non présente dans ce dépôt a été développé en Javascript avec React. La communication entre les deux a été faite via des requêtes Axios et JWT a été utilisé pour protéger certaines ressources de l'API.</p><p>L'équipe n'a pas poursuivi le développement du projet donc il est resté au stade v1.</p><p>Présentation du projet sur Youtube : https://youtu.be/i4v-851tBPo?t=596 (Fin de notre projet à 30 min)</p>",
       "links": [
         {
-          "value": "Voir le dépot Back-End",
+          "value": "Voir le dépot Github (back)",
           "url": "https://github.com/Grandpere/O-Children-API",
           "title": "Accéder au dépôt Back-End sur Github dans une nouvelle fenêtre du navigateur"
         },
         {
-          "value": "Voir le dépot Front-End",
+          "value": "Voir le dépot Github (front)",
           "url": "https://github.com/Grandpere/O-Children",
           "title": "Accéder au dépôt Front-End sur Github dans une nouvelle fenêtre du navigateur"
+        },
+        {
+          "value": "Vidéo de Présentation",
+          "url": "https://youtu.be/i4v-851tBPo?t=596",
+          "title": "Accéder à la vidéo (notre démo se termine à 30min)"
         }
       ],
       "media": [
@@ -188,10 +193,10 @@
       "type": "formation",
       "title": "FAQ O'Clock",
       "cover": "assets/images/projects/evalsymfo/eval-symfo.png",
-      "description": "Ce projet était a réaliser le soir après nos cours portant sur la spécialité Symfony, et dans un délai d'une semaine. Il s'agissait de proposer un site, du style Stackoverflow, permettant de poser des questions, d'obtenir des réponses et bien sur de classer toutes les questions selon des thèmes. Il s'agissait d'un projet à réaliser seul donc j'ai réalisé la totalité du site comprenant la partie front et back-office.",
+      "description": "<p>Ce projet était a réaliser le soir après nos cours portant sur la spécialité Symfony, et dans un délai d'une semaine.</p><p>Il s'agissait de proposer un site, du style Stackoverflow, permettant de poser des questions, d'obtenir des réponses et bien sur de classer toutes les questions selon des thèmes.</p>",
       "links": [
         {
-          "value": "github",
+          "value": "Voir le dépôt Github",
           "url": "https://github.com/Grandpere/symfo-eval-faq",
           "title": "Voir le dépot sur Github dans une nouvelle fenêtre du navigateur"
         }
@@ -211,7 +216,7 @@
       "type": "formation",
       "title": "O'Quiz",
       "cover": "assets/images/projects/oquiz/00_home.png",
-      "description": "Ce mini projet était à réaliser le soir après la formation O'Clock dans un délai maximum d'une semaine. L'objectif était de concevoir un site permettant de remplir des quizzs qui seraient utilisé par des enfants d'une école. Plusieurs thèmes devaient être disponible ainsi que plusieurs niveaux de difficultés. Si l'on ne possède pas de compte, on peut consulter l'ensemble du site, mais sans pouvoir répondre au quiz. Pour cela il est nécessaire de créer un compte afin de débloquer cette fonctionnalité, une fois remplie la possibilité de s'envoyer les résultats du questionnaire par mail est proposé. Enfin, une interface d'administration a été ajouté afin de pouvoir gérer le contenu du site.",
+      "description": "<p>Ce projet était à réaliser le soir après la formation O'Clock dans un délai maximum d'une semaine.</p><p>L'objectif était de concevoir un site permettant de remplir des quizzs qui seraient utilisé par des enfants d'une école. Plusieurs thèmes devaient être disponible ainsi que plusieurs niveaux de difficultés.</p><p>Si l'on ne possède pas de compte, on peut consulter l'ensemble du site, mais sans pouvoir répondre au quiz. Pour cela il est nécessaire de créer un compte afin de débloquer cette fonctionnalité, une fois remplie la possibilité de s'envoyer les résultats du questionnaire par mail est proposé.</p><p>Enfin, une interface d'administration a été ajouté afin de pouvoir gérer le contenu du site.</p>",
       "links": [],
       "media": [
         {

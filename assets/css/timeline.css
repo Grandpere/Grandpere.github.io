@@ -420,7 +420,15 @@ https://codepen.io/ArnaudBalland/pen/vGZKLr
     top: 80%;
 }
 
-/* TIMELINE MODAL CAROUSEL */
+/* TIMELINE MODAL */
+.modal .modal-header .modal-title {
+    margin: 0 auto;
+}
+
+.modal-header .close {
+    margin: -1rem;
+}
+
 .carousel img {
     height: 50vh!important;
 }
@@ -441,4 +449,21 @@ https://codepen.io/ArnaudBalland/pen/vGZKLr
     filter: invert(0);
     background-color: rgba(0, 0, 0, .5);
     transition: .5s ease-in;
+}
+
+.modal .modal-footer a {
+    display: block;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    background: #30cc8b;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+    line-height: 1;
+}
+
+.modal .modal-footer a:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, .5);
 }
