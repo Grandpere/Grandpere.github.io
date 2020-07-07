@@ -17,7 +17,11 @@ html, body {
     left: 0;
     background-color: #000;
     display:flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     z-index: 100000;
 }
@@ -42,6 +46,14 @@ html, body {
     animation-delay: 0.5s;
 }
 
+@-webkit-keyframes pulse {
+    to {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+
 @keyframes pulse {
     to {
         -webkit-transform: scale(0.8);
@@ -61,6 +73,8 @@ html, body {
 }
 
 #navbarNav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -87,7 +101,6 @@ h5 {
 
 .card {
     border: none;
-    /*margin: .5rem;*/
 }
 
 .card > .card-body {
@@ -103,6 +116,9 @@ ul {
     background-color: #000;
     padding-bottom: .5rem;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     max-height: 100vh;
@@ -112,11 +128,21 @@ ul {
     cursor: pointer;
     position: relative;
     top: -3.5rem;
+    -webkit-animation: bounceArrow 0.5s infinite alternate;
     animation: bounceArrow 0.5s infinite alternate;
 }
 
 #white-arrow a {
     font-size: 2rem;
+}
+
+@-webkit-keyframes bounceArrow {
+    from {
+        margin-top: 20px;
+    }
+    to {
+        margin-top: 0px;
+    }
 }
 
 @keyframes bounceArrow {
@@ -129,7 +155,10 @@ ul {
 }
 
 .resume-background {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5))), url('../images/bg-resume.png');
+    background: -o-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/bg-resume.png');
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/bg-resume.png');
+    -webkit-filter: blur(2.5px);
     filter: blur(2.5px);
     background-size: cover;
     background-attachment: fixed;
@@ -145,6 +174,8 @@ ul {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 80%;
@@ -153,28 +184,40 @@ ul {
 }
 
 .resume-info .animated:first-child {
+    -webkit-animation-delay: .3s;
     animation-delay: .3s;
+    -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
 }
 
 .resume-info .animated:nth-child(2) {
+    -webkit-animation-delay: .6s;
     animation-delay: .6s;
+    -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
 }
 
 .resume-info .animated:last-child {
+    -webkit-animation-delay: .9s;
     animation-delay: .9s;
+    -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
 }
 
 #presentation_description {
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s
 }
 
 #presentation_cv {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     max-width: 220px;
 }
@@ -184,18 +227,25 @@ ul {
 
 /* COMPETENCES */
 #competences .row>.card {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     max-width: 100px;
 }
 
 #competences .row>.card img {
     max-width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -webkit-filter: brightness(0%);
     filter: brightness(0%);
 }
 
 #competences .row>.card img.colored {
+    -webkit-filter: brightness(100%);
     filter: brightness(100%);
 }
 
@@ -215,12 +265,16 @@ ul {
 
 .show {
     opacity: 1;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
     transition: opacity .5s;
     display: block;
 }
 
 .hide {
     opacity: 0;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
     transition: opacity .5s;
     display: none;
 }
@@ -260,6 +314,8 @@ ul {
     height: 2.5rem;
     outline: none;
     border: 2px solid transparent;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -270,6 +326,8 @@ ul {
     outline: none;
     border: 2px solid transparent;
     resize: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -287,10 +345,14 @@ ul {
     background: #30cc8b;
     color: #fff;
     cursor: pointer;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
 .click-animations button:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
     transform: scale(0.95);
 }
 
