@@ -331,11 +331,6 @@ ul {
     transition: 0.3s;
 }
 
-.click-animations input:focus,
-.click-animations textarea:focus {
-    border-color: #30cc8b;
-}
-
 .click-animations button {
     display: block;
     margin: .5rem auto;
@@ -358,6 +353,15 @@ ul {
 
 .form-error {
     border-color: #F46036 !important;
+}
+
+.form-success {
+    border-color: #30cc8b !important;
+}
+
+.click-animations input:focus,
+.click-animations textarea:focus {
+    border-color: #4bb7e9 !important;
 }
 
 /* FOOTER */

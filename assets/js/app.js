@@ -1,53 +1,118 @@
 let app = {
     init: function () {
         app.currentYear();
-        app.contact();
+        app.addListeners();
         cv.init();
     },
-    currentYear: function () {
-        document.getElementById("year").innerHTML = new Date().getFullYear().toString();
+    addListeners: function () {
+        $('#formspree_name').on('input', app.handleValidateName);
+        $('#formspree_email').on('input', app.handleValidateEmail);
+        $('#formspree_message').on('keyup', app.handleValidateMessage);
+        $('#formspree_contact').on('submit', app.handleValidateForm);
     },
-    contact: function () {
-        let form = document.getElementById("formspree_contact");
-        let status = document.getElementById("formspree_status");
+    currentYear: function () {
+        $('#year').html(new Date().getFullYear().toString());
+    },
+    handleValidateName: function() {
+        let input = $(this);
+        let isValid= app.validateName(input.val());
+
+        if(false === isValid || input.val().length === 0) {
+            input.removeClass('form-success').addClass('form-error');
+        }
+        else {
+            input.removeClass('form-error').addClass('form-success');
+        }
+    },
+    validateName: function(name) {
+        let regex = /^([a-zA-Z]{2,})([ \-]?)([a-zA-z]{2,})*$/;
+
+        return regex.test(name);
+    },
+    handleValidateEmail: function () {
+        let input = $(this);
+        let isValid = app.validateEmail(input.val());
+
+        if(true === isValid){
+            input.removeClass("form-error").addClass("form-success");
+        }
+        else{
+            input.removeClass("form-success").addClass("form-error");
+        }
+    },
+    validateEmail: function(email) {
+        let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        return regex.test(email);
+    },
+    handleValidateMessage: function () {
+        let input = $(this);
+        let isValid = app.validateMessage(input.val());
+
+        if(true === isValid){
+            input.removeClass("form-error").addClass("form-success");
+        }
+        else{
+            input.removeClass("form-success").addClass("form-error");
+        }
+    },
+    validateMessage: function(message) {
+        return 0 < message.length;
+    },
+    handleValidateForm: function(evt) {
+        evt.preventDefault();
+        let form = $(this);
+        let status = $('#formspree_status');
+        let name = $('#formspree_name').val();
+        let email = $('#formspree_email').val();
+        let message = $('#formspree_message').val();
+
+        if(true === app.validateName(name) && true === app.validateEmail(email) && true === app.validateMessage(message))
+        {
+            let data = form.serializeArray();
+            app.contact(data);
+        }
+        else {
+            status.html('At least one field is invalid');
+            status.css('color', '#F46036');
+            status.removeClass('hide');
+            status.addClass('show');
+        }
+    },
+    contact: function (data) {
+        let form = $('#formspree_contact');
+        let status = $('#formspree_status');
 
         function success() {
-            form.reset();
-            status.innerHTML = "Thanks!";
-            status.style.color = "#30cc8b";
+            form.trigger('reset');
+            status.html('Thanks!');
+            status.css('color', '#30cc8b');
             statusClass();
         }
 
         function error() {
-            status.innerHTML = "Oops! There was a problem.";
-            status.style.color = "#F46036";
+            status.html('Oops! There was a problem.');
+            status.css('color', '#F46036');
             statusClass();
         }
 
         function statusClass() {
-            status.classList.remove("hide");
-            status.classList.add("show");
+            status.removeClass('hide');
+            status.addClass('show');
         }
 
-        form.addEventListener("submit", function(ev) {
-            ev.preventDefault();
-            let data = new FormData(form);
-            app.ajax(form.method, form.action, data, success, error);
-        });
-    },
-    ajax: function (method, url, data, success, error) {
-        let xhr = new XMLHttpRequest();
-        xhr.open(method, url);
-        xhr.setRequestHeader("Accept", "application/json");
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState !== XMLHttpRequest.DONE) return;
-            if (xhr.status === 200) {
-                success(xhr.response, xhr.responseType);
-            } else {
-                error(xhr.status, xhr.response, xhr.responseType);
+        $.ajax(
+            {
+                method: form.attr('method'),
+                url: form.attr('action'),
+                data: data,
+                dataType: 'json'
             }
-        };
-        xhr.send(data);
+        ).done(function(response) {
+            success();
+        }).fail(function(response) {
+            error();
+        });
     }
 };
 
